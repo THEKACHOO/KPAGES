@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kpages</title>
-<link rel="icon" href="Style/Kpages.png">
+<link rel="icon" href="Logo/Kpages.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="Style/style.css">
@@ -18,7 +18,7 @@
         <button class="reader-close" id="readerClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
     </div>
     <div class="reader-body">
-        <iframe id="readerFrame" title="Journal PDF"></iframe>
+        <iframe id="readerFrame" title="Document PDF"></iframe>
         <div class="reader-empty" id="readerEmpty">
             <i class="fas fa-file-pdf"></i>
             <p>The PDF link is not available yet.</p>
@@ -32,6 +32,10 @@
         <span>Kpages</span>
         <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
     </div>
+    <div class="menu-search">
+        <i class="fas fa-magnifying-glass"></i>
+        <input type="search" id="menuSearch" placeholder="Search title or author...">
+    </div>
     <a href="index.html">Home</a>
     <a href="Guidelines.html">Author Guidelines</a>
     <a href="Submit.html">Make a Submission</a>
@@ -41,13 +45,26 @@
 
 <header>
     <a href="index.html" class="header-brand">Kpages</a>
+
+    <nav class="header-nav" id="headerNav">
+        <div class="header-search">
+            <i class="fas fa-magnifying-glass"></i>
+            <input type="search" id="headerSearch" placeholder="Search title or author...">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="Guidelines.html">Author Guidelines</a>
+        <a href="Submit.html">Make a Submission</a>
+        <a href="Editorial.html">Editorial Board</a>
+        <a href="Archives.html">Archives</a>
+    </nav>
+
     <button class="burger" id="menuOpen" aria-label="Open menu"><i class="fas fa-bars"></i></button>
 </header>
 
 <section class="hero">
     <div class="container">
         <h1>Quiet mind<br>Loud words</h1>
-        <p>Publish your journal at Kpages</p>
+        <p>Publish your work at Kpages</p>
         <div class="nav-buttons">
             <a class="btn" href="Guidelines.html">Author Guidelines</a>
             <a class="btn" href="Submit.html">Make a Submission</a>
@@ -57,17 +74,31 @@
     </div>
 </section>
 
-<section class="journals" id="journals">
+<section class="slider-section">
+    <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-viewport">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide"><img src="Logo/Kpages1.png" alt="Kpages 1"></div>
+            <div class="slide"><img src="Logo/Kpages2.png" alt="Kpages 2"></div>
+            <div class="slide"><img src="Logo/Kpages3.png" alt="Kpages 3"></div>
+        </div>
+    </div>
+    <button class="slider-btn slider-next" id="sliderNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+</section>
+
+<section class="works" id="works">
     <div class="container">
-        <h2 class="section-title">Journals</h2>
-        <div class="journal-grid">
-            <div class="journal-item">
-                <div class="journal-cover"><i class="fas fa-file-lines"></i></div>
-                <h3>Example Journal</h3>
+        <h2 class="section-title">Publisher</h2>
+        <div class="work-grid" id="workGrid">
+            <div class="work-item" data-title="Example Work" data-author="The Kachoo" data-tags="example sample fiction">
+                <div class="work-cover"><i class="fas fa-book-open"></i></div>
+                <h3>Example Work</h3>
+                <p class="work-author">by The Kachoo</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <button class="btn read-btn" data-title="Example Journal" data-pdf="#">Read Now</button>
+                <button class="btn read-btn" data-title="Example Work" data-pdf="#">Read Now</button>
             </div>
         </div>
+        <p class="search-empty" id="searchEmpty" hidden>No works found.</p>
     </div>
 </section>
 
@@ -76,7 +107,7 @@
         <div class="footer-grid">
             <div>
                 <div class="footer-brand">Kpages</div>
-                <p>National and international journal publisher, for roleplay purpose only. Everything published here is fictional and intended solely as reading material and to broaden knowledge.</p>
+                <p>National and international publisher, for roleplay purpose only. Everything published here is fictional and intended solely as reading material and to broaden knowledge.</p>
             </div>
             <div>
                 <h4>The Kachoo</h4>
@@ -96,4 +127,4 @@
 <script src="Style/header-footer.js"></script>
 <script src="Style/script.js"></script>
 </body>
-  </html>
+        </html>
