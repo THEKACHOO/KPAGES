@@ -3,18 +3,22 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 14px 22px;
     background: var(--white);
     border-bottom: 1.5px solid var(--black);
     z-index: 1000;
 }
-.header-left { justify-self: start; }
-.header-right { justify-self: end; }
-.header-left img { height: 44px; width: auto; display: block; }
-.header-center img { height: 56px; width: auto; display: block; }
+
+.header-brand {
+    font-family: 'BD Megalona', 'Outfit', sans-serif;
+    font-size: 42px;
+    line-height: 1;
+    color: var(--black);
+    text-decoration: none;
+}
 
 .burger {
     border: none;
@@ -57,6 +61,5 @@ footer a:hover { font-style: italic; }
 
 @media (max-width: 768px) {
     header { padding: 12px 16px; }
-    .header-left img { height: 36px; }
-    .header-center img { height: 46px; }
+    .header-brand { font-size: 34px; }
 }
