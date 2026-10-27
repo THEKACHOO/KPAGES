@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kpages</title>
+<link rel="icon" href="Style/Kpages.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="Style/style.css">
+<link rel="stylesheet" href="Style/header-footer.css">
+</head>
+<body>
+
+<div class="reader" id="reader">
+    <div class="reader-head">
+        <h3 id="readerTitle">Reader</h3>
+        <button class="reader-close" id="readerClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div class="reader-body">
+        <iframe id="readerFrame" title="Journal PDF"></iframe>
+        <div class="reader-empty" id="readerEmpty">
+            <i class="fas fa-file-pdf"></i>
+            <p>The PDF link is not available yet.</p>
+        </div>
+    </div>
+</div>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<nav class="menu" id="menu" aria-label="Main menu">
+    <div class="menu-head">
+        <span>Kpages</span>
+        <button class="menu-close" id="menuClose" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="Guidelines.html">Author Guidelines</a>
+    <a href="Submit.html">Make a Submission</a>
+    <a href="Editorial.html">Editorial Board</a>
+    <a href="Archives.html">Archives</a>
+</nav>
+
+<header>
+    <div class="header-left">
+        <a href="https://x.com/thekachoo" target="_blank" rel="noopener"><img src="Style/Thekachoo.png" alt="The Kachoo"></a>
+    </div>
+    <div class="header-center">
+        <a href="index.html"><img src="Style/Kpages.png" alt="Kpages"></a>
+    </div>
+    <div class="header-right">
+        <button class="burger" id="menuOpen" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Quiet mind<br>Loud words</h1>
+        <p>Publish your journal at Kpages</p>
+        <div class="nav-buttons">
+            <a class="btn" href="Guidelines.html">Author Guidelines</a>
+            <a class="btn" href="Submit.html">Make a Submission</a>
+            <a class="btn" href="Editorial.html">Editorial Board</a>
+            <a class="btn" href="Archives.html">Archives</a>
+        </div>
+    </div>
+</section>
+
+<section class="journals" id="journals">
+    <div class="container">
+        <h2 class="section-title">Journals</h2>
+        <div class="journal-grid">
+            <div class="journal-item">
+                <div class="journal-cover"><i class="fas fa-file-lines"></i></div>
+                <h3>Example Journal</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <button class="btn read-btn" data-title="Example Journal" data-pdf="#">Read Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand">Kpages</div>
+                <p>National and international journal publisher, for roleplay purpose only. Everything published here is fictional and intended solely as reading material and to broaden knowledge.</p>
+            </div>
+            <div>
+                <h4>The Kachoo</h4>
+                <p>The Kachoo is a digital media company responsible for every publication released through Kpages. From editorial oversight to publishing standards, it ensures each work is reviewed, curated, and presented with care. All content is fictional, created for roleplay purposes, and shared as reading material to inspire imagination and broaden knowledge.</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Official Account: <a href="https://x.com/thekachoo" target="_blank" rel="noopener">The Kachoo</a></p>
+                <p>Contact: <a href="https://x.com/haikachoo" target="_blank" rel="noopener">Admin Kpages</a></p>
+                <p>Email: <a href="mailto:ohkachoo@gmail.com">ohkachoo@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Kpages by The Kachoo. All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="Style/header-footer.js"></script>
+<script src="Style/script.js"></script>
+</body>
+  </html>
