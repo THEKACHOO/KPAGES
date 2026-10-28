@@ -1,2 +1,2 @@
 # KPAGES
-National and international journal publisher, for roleplay purpose only. Everything published here is fictional and intended solely as reading material and to broaden knowledge.
+Website untuk publish buku, jurnal, dan karya tulis. Dikhususkan untuk para penulis di roleplay, memerlukan izin terbit di dalam website Kpages ini.
