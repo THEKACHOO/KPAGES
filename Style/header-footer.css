@@ -4,7 +4,6 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 24px;
     padding: 14px 22px;
@@ -22,12 +21,16 @@ header {
     flex-shrink: 0;
 }
 
+.header-search {
+    flex: 1;
+    max-width: 520px;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    flex: 1;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 .header-nav a {
     color: var(--black);
